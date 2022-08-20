@@ -6,12 +6,12 @@ import { getAuth } from 'firebase/auth';
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: 'AIzaSyA8kL1gNzm8Ev3ggFVUiNuYfBHJnftxcDw',
-  authDomain: 'jikmunn-video-conference-app.firebaseapp.com',
-  projectId: 'jikmunn-video-conference-app',
-  storageBucket: 'jikmunn-video-conference-app.appspot.com',
-  messagingSenderId: '209937193977',
-  appId: '1:209937193977:web:a6232b38a8ef278b617b28',
+  apiKey: process.env.REACT_APP_apiKey,
+  authDomain: process.env.REACT_APP_authDomain,
+  projectId: process.env.REACT_APP_projectId,
+  storageBucket: process.env.REACT_APP_storageBucket,
+  messagingSenderId: process.env.REACT_APP_messagingSenderId,
+  appId: process.env.REACT_APP_appId,
 };
 
 // Initialize Firebase
